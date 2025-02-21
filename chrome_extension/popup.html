@@ -1,0 +1,54 @@
+<!-- *{
+
+
+    "scripts": {
+    "dev": "next dev"
+  }
+  
+    "name": "linkedin",
+    "version": "1.0.0",
+    "main": "background.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+      
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "linkedin": "file:",
+      "puppeteer": "^24.2.1",
+      "tesseract.js": "^6.0.0"
+    }
+  }*/ -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Auto-Apply</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
+        label { display: block; margin-top: 10px; }
+        button { margin-top: 10px; width: 100%; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h2>Job Auto-Apply Settings</h2>
+    <label>Keywords: <input type="text" id="keywords"></label>
+    <label>Location: <input type="text" id="location"></label>
+    <label>Experience Level: 
+        <select id="experience">
+            <option value="entry">Entry</option>
+            <option value="mid">Mid</option>
+            <option value="senior">Senior</option>
+        </select>
+    </label>
+    <button id="start">Save Filters</button>
+    <button id="startApplying">Start Applying</button>
+    <div id="jobList"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
